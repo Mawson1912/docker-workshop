@@ -18,7 +18,7 @@ I connected to the Ubuntu VM using:
 gcloud compute ssh vm01 --zone=europe-west2-c
 ```
 
-![Running VM](images/01%20Running%20VM.png)
+![Running VM](Images/01%20Running%20VM.png)
 
 ---
 
@@ -26,7 +26,7 @@ gcloud compute ssh vm01 --zone=europe-west2-c
 
 The tutorial application was set up inside the VM environment and prepared for containerisation.
 
-![Preparing app](images/02%20Removing%20and%20getting%20app%20in%20VM.png)
+![Preparing app](Images/02%20Removing%20and%20getting%20app%20in%20VM.png)
 
 ---
 
@@ -43,7 +43,7 @@ CMD ["node", "src/index.js"]
 EXPOSE 3000
 ```
 
-![Dockerfile added](images/03%20Dockerfile%20added.png)
+![Dockerfile added](Images/03%20Dockerfile%20added.png)
 
 ---
 
@@ -57,7 +57,7 @@ docker build -t getting-started .
 
 This downloaded the base image and installed the application dependencies.
 
-![Building container image](images/04%20Building%20container%20image.png)
+![Building container image](Images/04%20Building%20container%20image.png)
 
 ---
 
@@ -71,7 +71,7 @@ docker run -d -p 8080:3000 getting-started
 
 Port 3000 inside the container was mapped to port 8080 on the VM.
 
-![Start container](images/05%20Start%20an%20app%20container.png)
+![Start container](Images/05%20Start%20an%20app%20container.png)
 
 ---
 
@@ -83,7 +83,7 @@ Because the container was running on a VM, I used SSH tunnelling to access it in
 gcloud compute ssh vm01 --zone=europe-west2-c -- -L 8080:localhost:8080
 ```
 
-![SSH tunnel](images/06%20SSH%20tunneled%20in%20my%20browser.png)
+![SSH tunnel](Images/06%20SSH%20tunneled%20in%20my%20browser.png)
 
 ---
 
@@ -91,11 +91,11 @@ gcloud compute ssh vm01 --zone=europe-west2-c -- -L 8080:localhost:8080
 
 The application was successfully accessed in the browser and tested by adding items.
 
-![App running](images/07%20The%20app%20running%20in%20browser.png)
+![App running](Images/07%20The%20app%20running%20in%20browser.png)
 
-![Items added](images/08%20The%20app%20running%20items%20added.png)
+![Items added](Images/08%20The%20app%20running%20items%20added.png)
 
-![Confirmation](images/09%20Confirmation%20working%20as%20it%20should.png)
+![Confirmation](Images/09%20Confirmation%20working%20as%20it%20should.png)
 
 ---
 
@@ -108,9 +108,9 @@ docker tag getting-started donaldbs/getting-started
 docker push donaldbs/getting-started
 ```
 
-![Push to Docker Hub](images/10%20Pushing%20container%20to%20docker%20hub.png)
+![Push to Docker Hub](Images/10%20Pushing%20container%20to%20docker%20hub.png)
 
-![Docker Hub image](images/11%20Container%20image%20in%20docker%20hub.png)
+![Docker Hub image](Images/11%20Container%20image%20in%20docker%20hub.png)
 
 ---
 
