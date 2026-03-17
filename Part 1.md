@@ -83,7 +83,7 @@ Because the container was running on a VM, I used SSH tunnelling to access it in
 gcloud compute ssh vm01 --zone=europe-west2-c -- -L 8080:localhost:8080
 ```
 
-![SSH tunnel](Images/06%20SSH%20tunneled%20in%20my%20browser.png)
+![SSH tunnel](Images/06%20SSH%20tunnel%20to%20see%20app%20in%20my%20browser.png)
 
 ---
 
