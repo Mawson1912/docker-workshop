@@ -93,9 +93,9 @@ The application was successfully accessed in the browser and tested by adding it
 
 ![App running](Images/07%20The%20app%20running%20in%20browser.png)
 
-![Items added](Images/08%20The%20app%20running%20items%20added.png)
+![Items added](Images/08%20The%20app%20running%20in%20browser%20items%20added.png)
 
-![Confirmation](Images/09%20Confirmation%20working%20as%20it%20should.png)
+![Confirmation](Images/09%20Confirmation%20container%20is%20running%20as%20it%20should.png)
 
 ---
 
@@ -108,7 +108,7 @@ docker tag getting-started donaldbs/getting-started
 docker push donaldbs/getting-started
 ```
 
-![Push to Docker Hub](Images/10%20Pushing%20container%20to%20docker%20hub.png)
+![Push to Docker Hub](Images/10%20Pushing%20container%20image%20to%20docker%20hub.png)
 
 ![Docker Hub image](Images/11%20Container%20image%20in%20docker%20hub.png)
 
