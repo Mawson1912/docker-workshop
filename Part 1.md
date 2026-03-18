@@ -26,7 +26,7 @@ gcloud compute ssh vm01 --zone=europe-west2-c
 
 The tutorial application was set up inside the VM environment and prepared for containerisation.
 
-![Preparing app](Images/02%20Removing%20and%20getting%20app%20in%20VM.png)
+![Preparing app](Images/02%20Removing%20and%20creating%20app%20in%20VM.png)
 
 ---
 
