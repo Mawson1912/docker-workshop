@@ -282,3 +282,5 @@ These logs confirm:
 ## Conclusion
 
 This section demonstrated how Docker Compose manages both application logic and data storage in a multi-container environment. By separating stateless services from persistent data, it allows containers to be recreated freely while maintaining application state through volumes.
+
+Thus I have reached as far as we have been asked to go for this assignment. It was a very useful learning exercise to document all of these processes. 
