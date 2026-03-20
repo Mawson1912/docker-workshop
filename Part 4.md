@@ -60,7 +60,7 @@ docker run -d -p 8080:3000 \
 
 ### 4. Observing Unexpected Persisted Data
 
-When I opened the application, I noticed that previous todo items from an earlier session (even from a previous attempt at the tutorial) were already present.
+When I opened the application, I noticed that previous todo items from an earlier session (over a month ago) were already present.
 
 ![Persisted todos from previous session](Images/15-persisted-todos-after-restart.png)
 
