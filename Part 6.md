@@ -155,3 +155,5 @@ This section demonstrated how multiple containers can work together using Docker
 - The database layer can be cleanly separated from the application  
 
 The issue encountered was particularly valuable, as it highlighted that Docker does not automatically replace running containers, and that logs are essential for diagnosing which container is actually serving the application.
+
+[Continue to next part](<Part 7.md>)
