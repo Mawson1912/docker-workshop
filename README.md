@@ -1,44 +1,98 @@
 # Docker Workshop
 
-This repository documents my completion of the Docker Getting Started Workshop for my Cloud Infrastructure and Virtualisation assignment.
+This repository contains my submission for the module Cloud Infrastructure and Virtualisation (B8IS003)
 
-The aim of the project was to demonstrate the basics of Docker, including:
+The assignment involved completing the Docker Getting Started Workshop and documenting the process of building, running, and managing containerised applications.
 
-- building images
-- running containers
-- updating applications
-- persisting data with volumes
-- using bind mounts
-- deploying multiple containers with Docker Compose
+---
+
+## Assignment Task
+
+> Follow the Docker Guide up to and including the deployment of multiple containers using Docker Compose.  
+> Submit all sources via Git link, along with any relevant deployment links.
+
+---
+
+## Overview
+
+This project documents my completion of the Docker workshop across Parts 1–7, covering:
+
+- building Docker images  
+- running and managing containers  
+- updating applications  
+- using bind mounts  
+- persisting data with volumes  
+- working with multi-container applications using Docker Compose  
+
+Each stage of the process is documented in separate files:
+
+- Part 1 → Part 7 (see repository file listing)
+
+---
+
+## Approach
+
+I had previously worked through most of the Docker tutorial during class.  
+For this assignment, I chose to work through the process again from the beginning in a clean environment.
+
+This allowed me to:
+
+- reinforce my understanding of each step  
+- clearly document the workflow from start to finish  
+- ensure that each stage of the process was captured independently  
+
+As a result, some early steps (such as removing and recreating the application environment) reflect resetting the setup before progressing through the tutorial again.
+
+---
 
 ## Tutorial Followed
 
 Docker Getting Started Workshop:  
 https://docs.docker.com/get-started/workshop/
 
+---
+
 ## Relevant Links
 
-Forked application repository:  
-https://github.com/Mawson1912/getting-started-app
+- This repository:  
+  https://github.com/Mawson1912/docker-workshop  
 
-Docker Hub image:  
-https://hub.docker.com/r/donaldbs/getting-started
+- Application source code (forked):  
+  https://github.com/Mawson1912/getting-started-app  
 
-## Overview
+- Docker Hub image:  
+  https://hub.docker.com/r/donaldbs/getting-started  
 
-The application used in this project is the Docker tutorial todo app.
+---
 
-I first worked through the Docker tutorial during term. For this assignment, I created this separate clean repository to present the process clearly and to reinforce my understanding by working through the steps again.
+## Repository Structure
 
-## Stages Completed
+- `Part1.md` → `Part7.md`  
+  Step-by-step documentation of each stage of the Docker workshop  
 
-### 1. Build and run a Docker image
+- `files/`  
+  Contains key configuration files used in the project:  
+  - `Dockerfile`  
+  - `compose.yaml`  
 
-A Dockerfile was used to package the application into a Docker image.
+- `Images/`  
+  Screenshots referenced throughout the documentation  
 
-Example commands:
+- `README.md`  
+  This file  
 
-```bash
-docker build -t getting-started .
-docker run -d -p 8080:3000 getting-started# docker-workshop
-This repository documents my completion of the Docker Getting Started Workshop for my Cloud Infrastructure and Virtualisation assignment.
+---
+
+## How to Use This Repository
+
+The project is structured as a sequential walkthrough.
+
+To review the work, please simply start at [Part 1](<Part 1.md>) and read through all parts.  
+
+---
+
+## Notes
+
+This repository focuses on documenting the containerisation and orchestration process.
+
+The application code itself is maintained separately in the linked repository, while this project captures how it is built, run, and managed using Docker.
