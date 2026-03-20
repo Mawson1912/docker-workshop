@@ -89,3 +89,5 @@ Bind mounts are extremely useful for development because they allow:
 - seamless integration between host and container environments
 
 However, this setup is not suitable for production, as it depends on the host file system. For deployment, a Docker image must be rebuilt to include all changes.
+
+[Continue to next part](<Part 6.md>)
