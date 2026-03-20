@@ -1,12 +1,12 @@
 # Part 5 – Using Bind Mounts for Development
 
-### Overview
+## Overview
 
 In this section, I explored the use of bind mounts to enable live development within a Docker container. Bind mounts allow files on the host machine to be directly shared with the container, meaning changes can be applied instantly without rebuilding the image.
 
 ---
 
-### Demonstrating File Synchronisation
+## Demonstrating File Synchronisation
 
 To verify that the bind mount was working, I created a file inside the container and confirmed that it appeared on the host machine. I then deleted the file from the host and observed that it was also removed from the container.
 
@@ -16,7 +16,7 @@ This demonstrates that bind mounts provide bidirectional file sharing between th
 
 ---
 
-### Running the Application with a Bind Mount
+## Running the Application with a Bind Mount
 
 I started the container using a bind mount and nodemon:
 
@@ -36,7 +36,7 @@ This configuration:
 
 ---
 
-### Live Reload with Nodemon
+## Live Reload with Nodemon
 
 I modified the application source code by changing the button text from “Add Item” to “Add” in:
 
@@ -54,7 +54,7 @@ This worked because:
 
 ---
 
-### Observing Data Persistence Behaviour
+## Observing Data Persistence Behaviour
 
 After making the UI change and confirming it worked, I also added a new todo item to the application. However, after stopping the container, rebuilding the image, and running a new container, I noticed that:
 
@@ -81,7 +81,7 @@ This demonstrates a key concept:
 
 ---
 
-### Key Learning
+## Key Learning
 
 Bind mounts are extremely useful for development because they allow:
 - real-time file updates
