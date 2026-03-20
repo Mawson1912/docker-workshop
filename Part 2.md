@@ -87,3 +87,6 @@ This section demonstrated how application updates are handled in a containerised
 - run a new container from the updated image  
 
 This reinforces the concept that containers are treated as immutable in practice, with changes applied by rebuilding images and replacing containers rather than modifying them in place.
+
+
+[Continue to next part](Part 2.md)
